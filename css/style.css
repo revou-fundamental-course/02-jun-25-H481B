@@ -17,6 +17,23 @@ nav a {
     border-radius: 200px;
     border-bottom: #ecf0f1 2px solid;
 }
+.panorama {
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    justify-content: center;
+    height: 100%;
+    background: linear-gradient(135deg, #9acef1, #3d4d5c);
+    color: #161313d2;
+    border-radius: 50px;
+}
+.panorama h1 {
+    margin-bottom: 15px;
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    line-height: 15%;
+    margin-left: 35px;
+}
 
 .carousel-container {
     position: relative; 
@@ -116,7 +133,7 @@ nav a {
 */ {
     background: #2c3e50;
 }
-@media screen and (max-width: 700px) /* 
+@media screen and (max-width: 760px) /* 
     Fungsi: 
     Kode CSS ini mengatur gaya untuk tampilan responsif pada layar dengan lebar maksimum 700px.
     Ini mengubah tata letak header, ukuran font, dan ukuran tombol carousel untuk memastikan tampilan yang baik pada perangkat kecil.
@@ -124,6 +141,10 @@ nav a {
     header {
         flex-direction: column;
         align-items: center;
+    }
+    .panorama h1 {
+        font-size: 1.5rem;
+        margin-left: 0;
     }
     nav a {
         font-size: 12px;
@@ -140,3 +161,34 @@ nav a {
     Dokumentasi ini menjelaskan fungsi dari kode CSS yang diberikan. 
     Silakan letakkan komentar ini di sebelah kode CSS untuk menjelaskan kegunaan setiap bagian kode.
 */
+.bulat-ruang {
+    display: flex;
+    flex-direction: row;
+    justify-content:first baseline;
+    height: auto;
+    width: auto;
+    background-color: #f0f0f0;
+    padding: 20px;
+    align-items: center;
+    gap: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    font: optional;
+    font-size: 1.2rem;
+    color: #333;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    
+}
+.bulat-ruang img {
+     position:relative; /* Relative positioning for the circle */
+    width: 250px; 
+    height: 250px;
+    border-radius: 250%; 
+    object-fit: cover; 
+    margin-left: 20px;
+    margin-right: 20px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.90);
+    transition: transform 0.3s ease;
+
+}

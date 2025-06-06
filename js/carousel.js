@@ -31,3 +31,14 @@ setInterval(() => showSlide(index + 1), 4000);
 
 // Inisialisasi
 showSlide(0);
+
+
+// greeting.js
+window.addEventListener("DOMContentLoaded", function() {
+  let nama = prompt("Masukkan nama Anda:", "andi");
+  if (nama && nama.trim() !== "") {
+    // Jadikan nama kapital semua huruf
+    nama = nama.trim().toUpperCase();
+    document.querySelector("h1").textContent = `Hi, ${nama} Selamat Datang di My Page`;
+  }
+});
